@@ -249,3 +249,92 @@ label {
   position: absolute;
   left: 30rem;
 }
+
+/*Modal: aparace/desaparece msj Ganaste/Perdiste*/
+
+.modal{
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.modal2{
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+
+.alertVentana{
+  width: 425px;
+  background: #f7f7f7;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 10px 0 30px 0;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
+}
+
+.alertVentana2{
+  width: 425px;
+  background: #f7f7f7;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 10px 0 30px 0;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
+}
+
+
+
+.alertVentana button{
+  background: #0A3871;
+  border: 1px solid #0A3871;
+  padding: 14px 0;
+  border-radius: 6px;
+  color: #f7f7f7;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 80%;
+}
+
+
+.alertVentana p strong{
+  font-size: 24px;
+  
+}
+
+.alertVentana2 button{
+  background: #0A3871;
+  border: 1px solid #0A3871;
+  padding: 14px 0;
+  border-radius: 6px;
+  color: #f7f7f7;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 80%;
+}
+
+
+.alertVentana2 p strong{
+  font-size: 24px;
+  
+}

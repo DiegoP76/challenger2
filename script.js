@@ -31,25 +31,9 @@ document.getElementById("btn-guardar").onclick = () => {
 }
 
 
-
-
 btnNuevoJuego.addEventListener("click", function () {
-  //location.reload();
-  palabraSecreta = "";
-  letras = [];
-  palabraCorrecta = "";
-  errores = 8;
-  letrasIncorrectas = [];
-  numeroDeErrores = 8;
-  letraElegida = [];
-
   iniciarJuego();
-
-
 });
-
-
-
 
 
 btnSalir.addEventListener("click", function () {
@@ -152,6 +136,16 @@ function guardarPalabra() {
 }
 
 function iniciarJuego() {
+
+
+  palabraSecreta = "";
+  letras = [];
+  palabraCorrecta = "";
+  errores = 8;
+  letrasIncorrectas = [];
+  numeroDeErrores = 8;
+  letraElegida = [];
+
 
   document.getElementById("div-desaparece").style.display = 'none';
 
@@ -304,24 +298,21 @@ function dibujarAhorcado(puntaje) {
 }
 
 function perdiste() {
-  tablero.font = 'bold 42px Inter';
-  tablero.lineWidth=6;
-  tablero.lineCap="round";
-  tablero.lineJoin="round";
-  tablero.fillStyle="red";
-  tablero.fillText("El juego finalizó!!",890,320);
+  modalAlertas2.style.display = "flex";
+  iniciarJuego();
 }
 
 function ganaste() {
-  tablero.font = 'bold 42px Inter';
-  tablero.lineWidth=6;
-  tablero.lineCap="round";
-  tablero.lineJoin="round";
-  tablero.fillStyle="green";
-  tablero.fillText("Has Ganado,",950,320);
-  tablero.fillText("Felicidades!!",930,360);
+  modalAlertas.style.display = "flex";
+  iniciarJuego();
 }   
 
 function recargar(){
   location.reload(); 
+}
+
+function guardarJugar(){
+  modalAlertas.style.display = "none";
+  modalAlertas2.style.display = "none";
+
 }
